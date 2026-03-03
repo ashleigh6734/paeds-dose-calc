@@ -1,0 +1,50 @@
+:root {
+    --primary: #0284c7;
+    --background: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --success-bg: #f0fdf4;
+    --success-border: #bbf7d0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.calculator-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 { color: var(--primary); text-align: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; }
+
+.input-group { margin-bottom: 1.5rem; }
+.row { display: flex; gap: 1rem; }
+.half-width { flex: 1; }
+
+.age-inputs { display: flex; gap: 0.5rem; }
+.age-inputs input { width: 60%; }
+.age-inputs select { width: 40%; }
+
+label { display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; }
+input, select, button { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 1rem; }
+
+button { background-color: var(--primary); color: white; border: none; font-weight: 600; cursor: pointer; margin-top: 1rem; }
+button:hover { background-color: #0369a1; }
+
+.result-box { background: var(--success-bg); border: 1px solid var(--success-border); padding: 1rem; border-radius: 8px; text-align: center; margin-bottom: 1rem; margin-top: 1.5rem; }
+.volume-text { font-size: 1.5rem; font-weight: bold; color: #166534; }
+.dose-text { font-size: 1rem; color: #15803d; margin-top: 0.25rem; }
+
+.disclaimer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+.reference { margin-top: 0.5rem; font-style: italic; }

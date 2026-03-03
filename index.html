@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paediatric Dose Calculator</title>
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <h1>Dose Calculator</h1>
+    <div class="calculator-card">
+        <h1>Paediatric Dose Calculator</h1>
 
-    <div>
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" placeholder="e.g. 12.5" step="0.1">
-    </div>
+        <div class="input-group row">
+            <div class="half-width">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="e.g. 14.5" step="0.1" min="0.1">
+            </div>
+            <div class="half-width">
+                <label for="ageValue">Age</label>
+                <div class="age-inputs">
+                    <input type="number" id="ageValue" placeholder="e.g. 6" min="0">
+                    <select id="ageUnit">
+                        <option value="months">Months</option>
+                        <option value="years">Years</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
-    <div>
-        <label for="drug">Select Antibiotic:</label>
-        <select id="drug">
-            <option value="amoxicillin_standard">Amoxicillin (Standard 15mg/kg)</option>
+        <div class="input-group">
+            <label for="drugSelect">Medication</label>
+            <select id="drugSelect">
+                <option value="">-- Select Medication --</option>
+                <option value="amoxicillin">Amoxicillin</option>
             </select>
+        </div>
+
+        <div class="input-group" id="formulationContainer" style="display: none;">
+            <label for="formulationSelect">Formulation</label>
+            <select id="formulationSelect"></select>
+        </div>
+
+        <div class="input-group" id="severityContainer" style="display: none;">
+            <label for="severitySelect">Infection Severity</label>
+            <select id="severitySelect">
+                <option value="standard">Standard</option>
+                <option value="severe">Severe</option>
+            </select>
+        </div>
+
+        <button id="calculateBtn">Calculate Dose</button>
+
+        <div id="resultsSection" style="display: none;">
+            <div class="result-box">
+                <div class="volume-text" id="volumeOutput">-- mL</div>
+                <div class="dose-text" id="doseOutput">(-- mg)</div>
+            </div>
+            <div class="guideline-note" id="guidelineOutput"></div>
+        </div>
+        
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This tool calculates standard reference doses only. A patient's clinical condition (e.g., renal/liver disease, immunosuppression, overweight, malnutrition) may require alteration of doses. If in doubt, seek senior or specialist medical advice. This tool is for educational/reference purposes and does not replace independent clinical judgment.</p>
+            <p class="reference">1. Australian Medicines Handbook Pty Ltd. AMH Children's Dosing Companion [Internet]. Adelaide: Australian Medicines Handbook Pty Ltd; 2024 [cited 2026 Mar 3]. Available from: https://childrens.amh.net.au/</p>
+            <p class="credentials">Developed by Ashleigh Henna, BPharm(Hons), GradCertPharmPrac, CertIVCybSec</p>
+        </div>
     </div>
-
-    <button id="calculateBtn">Calculate Dose</button>
-
-    <h2>Result:</h2>
-    <p id="resultDisplay">Enter details to see the dose.</p>
 
     <script src="app.js"></script>
 </body>

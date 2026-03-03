@@ -1,0 +1,78 @@
+{
+  "amoxicillin": {
+    "drug_name": "Amoxicillin",
+    "base_active_ingredient": "amoxicillin",
+    "requires_severity": true,
+    "formulations": [
+      {
+        "id": "amox_25",
+        "name": "Amoxicillin 25 mg/mL",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 30,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 1000
+          }
+        ]
+      },
+      {
+        "id": "amox_50",
+        "name": "Amoxil Forte 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 30,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 1000
+          }
+        ]
+      },
+      {
+        "id": "amox_100",
+        "name": "Maxamox 100 mg/mL",
+        "concentration_mg_per_ml": 100,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 30,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 1000
+          }
+        ]
+      }
+    ]
+  }
+}
