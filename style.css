@@ -34,7 +34,7 @@ h1 { color: var(--primary); text-align: center; border-bottom: 2px solid #e2e8f0
 
 .age-inputs { display: flex; gap: 0.5rem; }
 .age-inputs input { width: 60%; }
-.age-inputs select { width: 40%; }
+.age-inputs select { width: 61%; }
 
 label { display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; }
 input, select, button { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 1rem; }
