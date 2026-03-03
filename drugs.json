@@ -74,5 +74,458 @@
         ]
       }
     ]
+  },
+  "amoxicillin_clavulanic_acid": {
+    "drug_name": "Amoxicillin with clavulanic acid",
+    "base_active_ingredient": "amoxicillin",
+    "requires_severity": true,
+    "formulations": [
+      {
+        "id": "curam_125",
+        "name": "Curam 125/31.25 (25 mg/mL amoxicillin)",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "augmentin_duo_400",
+        "name": "Augmentin Duo 400 (80 mg/mL amoxicillin)",
+        "concentration_mg_per_ml": 80,
+        "dosing_rules": [
+          {
+            "min_age_months": 2,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 22.5,
+            "frequency": "every 12 hours",
+            "max_dose_mg": 875
+          },
+          {
+            "min_age_months": 2,
+            "max_age_months": 144,
+            "severity": "severe",
+            "dose_mg_per_kg": 22.5,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 875
+          }
+        ]
+      }
+    ]
+  },
+  "azithromycin": {
+    "drug_name": "Azithromycin",
+    "base_active_ingredient": "azithromycin",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "zithromax_40",
+        "name": "Zithromax 40 mg/mL",
+        "concentration_mg_per_ml": 40,
+        "dosing_rules": [
+          {
+            "min_age_months": 6,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "once daily for 3 days",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "cefalexin": {
+    "drug_name": "Cefalexin",
+    "base_active_ingredient": "cefalexin",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "ibilex_25",
+        "name": "Ibilex 25 mg/mL",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "ibilex_50",
+        "name": "Ibilex/Keflex 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "cefaclor": {
+    "drug_name": "Cefaclor",
+    "base_active_ingredient": "cefaclor",
+    "requires_severity": true,
+    "formulations": [
+      {
+        "id": "ceclor_25",
+        "name": "Ceclor/Keflor 25 mg/mL",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 250
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "ceclor_50",
+        "name": "Ceclor/Keflor 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 250
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 8 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "clarithromycin": {
+    "drug_name": "Clarithromycin",
+    "base_active_ingredient": "clarithromycin",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "klacid_50",
+        "name": "Klacid 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 7.5,
+            "frequency": "twice daily",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "erythromycin": {
+    "drug_name": "Erythromycin",
+    "base_active_ingredient": "erythromycin",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "emycin_40",
+        "name": "E-Mycin 40 mg/mL",
+        "concentration_mg_per_ml": 40,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 0.25,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 0.25,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 8 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "emycin_80",
+        "name": "E-Mycin 80 mg/mL",
+        "concentration_mg_per_ml": 80,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 0.25,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 0.25,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "every 8 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "flucloxacillin": {
+    "drug_name": "Flucloxacillin",
+    "base_active_ingredient": "flucloxacillin",
+    "requires_severity": true,
+    "formulations": [
+      {
+        "id": "flucil_25",
+        "name": "Flucil 25 mg/mL",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 0.25,
+            "severity": "standard",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 0.25,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 8 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 25,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 1000
+          }
+        ]
+      },
+      {
+        "id": "flucil_50",
+        "name": "Flucil 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 0.25,
+            "severity": "standard",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 0.25,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 8 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 25,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 500
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 50,
+            "frequency": "every 6 hours",
+            "max_dose_mg": 1000
+          }
+        ]
+      }
+    ]
+  },
+  "metronidazole": {
+    "drug_name": "Metronidazole",
+    "base_active_ingredient": "metronidazole",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "flagyl_s_40",
+        "name": "Flagyl S 40 mg/mL",
+        "concentration_mg_per_ml": 40,
+        "dosing_rules": [
+          {
+            "min_age_months": 0,
+            "max_age_months": 1,
+            "severity": "standard",
+            "dose_mg_per_kg": 7.5,
+            "frequency": "every 12 hours",
+            "max_dose_mg": null
+          },
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "twice daily",
+            "max_dose_mg": 400
+          }
+        ]
+      }
+    ]
+  },
+  "phenoxymethylpenicillin": {
+    "drug_name": "Phenoxymethylpenicillin",
+    "base_active_ingredient": "phenoxymethylpenicillin",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "phenox_25",
+        "name": "Phenoxymethylpenicillin 25 mg/mL",
+        "concentration_mg_per_ml": 25,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "4 times a day",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "phenox_30",
+        "name": "Cilicaine V 30 mg/mL",
+        "concentration_mg_per_ml": 30,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "4 times a day",
+            "max_dose_mg": 500
+          }
+        ]
+      },
+      {
+        "id": "phenox_50",
+        "name": "Phenoxymethylpenicillin 50 mg/mL",
+        "concentration_mg_per_ml": 50,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 12.5,
+            "frequency": "4 times a day",
+            "max_dose_mg": 500
+          }
+        ]
+      }
+    ]
+  },
+  "trimethoprim_sulfamethoxazole": {
+    "drug_name": "Trimethoprim with sulfamethoxazole",
+    "base_active_ingredient": "trimethoprim",
+    "requires_severity": true,
+    "formulations": [
+      {
+        "id": "septrin_8",
+        "name": "Septrin (8 mg/mL trimethoprim)",
+        "concentration_mg_per_ml": 8,
+        "dosing_rules": [
+          {
+            "min_age_months": 1.5,
+            "max_age_months": 216,
+            "severity": "standard",
+            "dose_mg_per_kg": 4,
+            "frequency": "every 12 hours",
+            "max_dose_mg": 160
+          },
+          {
+            "min_age_months": 1.5,
+            "max_age_months": 216,
+            "severity": "severe",
+            "dose_mg_per_kg": 8,
+            "frequency": "every 12 hours",
+            "max_dose_mg": 320
+          }
+        ]
+      }
+    ]
   }
 }
