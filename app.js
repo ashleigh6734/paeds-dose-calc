@@ -146,8 +146,10 @@ calculateBtn.addEventListener('click', () => {
     doseOutput.textContent = `(${finalMg} mg of ${drug.base_active_ingredient})`;
     
     // Build a clean guideline text string to show the user the exact math used
-    guidelineOutput.textContent = `Target: ${rule.dose_mg_per_kg} mg/kg/dose ${rule.frequency}. ` + 
-                                  (rule.max_dose_mg ? `(Max: ${rule.max_dose_mg} mg/dose).` : '');
+    const indicationText = drug.indication || 'Bacterial infections';
+    guidelineOutput.innerHTML = `<strong>Indication:</strong> ${drug.indication}<br>
+                             <strong>Target:</strong> ${rule.dose_mg_per_kg} mg/kg/dose ${rule.frequency}. ` + 
+                             (rule.max_dose_mg ? `(Max: ${rule.max_dose_mg} mg/dose).` : '');
 
     resultsSection.style.display = 'block';
 });

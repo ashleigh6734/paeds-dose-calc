@@ -73,7 +73,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "amoxicillin_clavulanic_acid": {
     "drug_name": "Amoxicillin with clavulanic acid",
@@ -126,7 +127,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "azithromycin": {
     "drug_name": "Azithromycin",
@@ -148,7 +150,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "cefalexin": {
     "drug_name": "Cefalexin",
@@ -185,7 +188,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "cefaclor": {
     "drug_name": "Cefaclor",
@@ -238,7 +242,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "clarithromycin": {
     "drug_name": "Clarithromycin",
@@ -260,7 +265,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "erythromycin": {
     "drug_name": "Erythromycin",
@@ -329,7 +335,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "flucloxacillin": {
     "drug_name": "Flucloxacillin",
@@ -414,7 +421,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Staphylococcal infections (not MRSA)"
   },
   "metronidazole": {
     "drug_name": "Metronidazole",
@@ -444,7 +452,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Anaerobic bacterial infections"
   },
   "phenoxymethylpenicillin": {
     "drug_name": "Phenoxymethylpenicillin",
@@ -496,7 +505,8 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   },
   "trimethoprim_sulfamethoxazole": {
     "drug_name": "Trimethoprim with sulfamethoxazole",
@@ -526,6 +536,7 @@
           }
         ]
       }
-    ]
+    ],
+    "indication": "Bacterial infections"
   }
 }
