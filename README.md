@@ -1,4 +1,4 @@
-# Paediatric Dose Calculator
+# Paediatric Dose Calculator 🖩
 
 A lightweight, purely client-side web application designed to safely and rapidly calculate pediatric antibiotic liquid doses. This tool reduces cognitive load by calculating both the raw milligram (mg) target and the final administrable volume (mL) based on standard Australian guidelines.
 
@@ -8,14 +8,14 @@ A lightweight, purely client-side web application designed to safely and rapidly
 * **Clinical Guardrails:** Automatically caps pediatric weight-based calculations at the maximum recommended adult single dose.
 * **Dynamic Logic:** Adjusts calculations and available formulations based on the patient's age (months/years) and the severity of the infection.
 * **Comprehensive Australian Database:** Includes a significantly wider range of oral liquid antibiotics compared to standard calculators, with calculations specifically tailored to formulations available on the Australian PBS.
-* **Zero-Latency:** 100% client-side execution means the calculator works instantly
+* **Zero-Latency:** 100% client-side execution means the calculator works instantly.
 * **Mobile-Responsive:** CSS designed specifically to be readable and easily tappable on phones and tablets.
 
 ## 🗺️ Future Scope
 While the current MVP focuses on oral antibiotics, the underlying JSON architecture was built to scale. Future updates will expand the calculator to include other common pediatric drug classes, such as:
-* **Analgesics & Antipyretics:** Paracetamol (e.g., Panadol), Ibuprofen (e.g., Nurofen).
-* **Corticosteroids:** Prednisolone.
-* **Antihistamines:** Cetirizine, Loratadine, Promethazine.
+* **Analgesics & Antipyretics** 
+* **Corticosteroids** 
+* **Antihistamines** 
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+).
