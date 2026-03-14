@@ -549,5 +549,91 @@
       }
     ],
     "indication": "Bacterial infections"
+  },
+  "desloratadine": {
+    "drug_name": "Desloratadine",
+    "class": "Antihistamine",
+    "base_active_ingredient": "desloratadine",
+    "requires_severity": false,
+    "indication": "Allergic rhinitis / Urticaria",
+    "formulations": [
+      {
+        "id": "claratyne_des",
+        "name": "Children’s Claratyne (0.5 mg/mL)",
+        "concentration_mg_per_ml": 0.5,
+        "dosing_rules": [
+          { "min_age_months": 6, "max_age_months": 12, "severity": "standard", "fixed_dose_mg": 1, "frequency": "once daily", "max_dose_mg": 1 },
+          { "min_age_months": 12, "max_age_months": 72, "severity": "standard", "fixed_dose_mg": 1.25, "frequency": "once daily", "max_dose_mg": 1.25 },
+          { "min_age_months": 72, "max_age_months": 144, "severity": "standard", "fixed_dose_mg": 2.5, "frequency": "once daily", "max_dose_mg": 2.5 },
+          { "min_age_months": 144, "max_age_months": 216, "severity": "standard", "fixed_dose_mg": 5, "frequency": "once daily", "max_dose_mg": 5 }
+        ]
+      }
+    ]
+  },
+  "cetirizine": {
+    "drug_name": "Cetirizine",
+    "class": "Antihistamine",
+    "base_active_ingredient": "cetirizine",
+    "requires_severity": false,
+    "indication": "Allergic rhinitis / Urticaria",
+    "formulations": [
+      {
+        "id": "zyrtec_liquid",
+        "name": "Zyrtec Liquid (1 mg/mL)",
+        "concentration_mg_per_ml": 1,
+        "dosing_rules": [
+          { "min_age_months": 6, "max_age_months": 24, "severity": "standard", "fixed_dose_mg": 2.5, "frequency": "once daily", "max_dose_mg": 2.5 },
+          { "min_age_months": 24, "max_age_months": 72, "severity": "standard", "fixed_dose_mg": 2.5, "frequency": "twice daily (or 5mg once daily)", "max_dose_mg": 5 },
+          { "min_age_months": 72, "max_age_months": 144, "severity": "standard", "fixed_dose_mg": 5, "frequency": "twice daily (or 10mg once daily)", "max_dose_mg": 10 },
+          { "min_age_months": 144, "max_age_months": 216, "severity": "standard", "fixed_dose_mg": 10, "frequency": "once daily", "max_dose_mg": 10 }
+        ]
+      },
+      {
+        "id": "zyrtec_drops",
+        "name": "Zyrtec Drops (10 mg/mL)",
+        "concentration_mg_per_ml": 10,
+        "dosing_rules": [
+          { "min_age_months": 12, "max_age_months": 24, "severity": "standard", "fixed_dose_mg": 2.5, "frequency": "twice daily", "max_dose_mg": 5 }
+        ]
+      }
+    ]
+  },
+  "fexofenadine": {
+    "drug_name": "Fexofenadine",
+    "class": "Antihistamine",
+    "base_active_ingredient": "fexofenadine",
+    "requires_severity": false,
+    "indication": "Allergic rhinitis / Urticaria",
+    "formulations": [
+      {
+        "id": "telfast_liquid",
+        "name": "Telfast Oral Liquid (6 mg/mL)",
+        "concentration_mg_per_ml": 6,
+        "dosing_rules": [
+          { "min_age_months": 6, "max_age_months": 24, "severity": "standard", "fixed_dose_mg": 15, "frequency": "twice daily (for Urticaria only)", "max_dose_mg": 30 },
+          { "min_age_months": 24, "max_age_months": 144, "severity": "standard", "fixed_dose_mg": 30, "frequency": "twice daily", "max_dose_mg": 60 },
+          { "min_age_months": 144, "max_age_months": 216, "severity": "standard", "fixed_dose_mg": 180, "frequency": "once daily", "max_dose_mg": 180 }
+        ]
+      }
+    ]
+  },
+  "loratadine": {
+    "drug_name": "Loratadine",
+    "class": "Antihistamine",
+    "base_active_ingredient": "loratadine",
+    "requires_severity": false,
+    "indication": "Allergic rhinitis / Urticaria",
+    "formulations": [
+      {
+        "id": "claratyne_liquid",
+        "name": "Claratyne/Lorapaed Liquid (1 mg/mL)",
+        "concentration_mg_per_ml": 1,
+        "dosing_rules": [
+          { "min_age_months": 12, "max_age_months": 24, "severity": "standard", "fixed_dose_mg": 2.5, "frequency": "once daily", "max_dose_mg": 2.5 },
+          { "min_age_months": 24, "max_age_months": 216, "severity": "standard", "fixed_dose_mg": 10, "frequency": "once daily (weight <30kg: 5mg daily)", "max_dose_mg": 10 }
+        ]
+      }
+    ]
   }
 }
+

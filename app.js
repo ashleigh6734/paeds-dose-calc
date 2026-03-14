@@ -43,12 +43,27 @@ function populateDrugDropdown() {
     // Clear existing options except the placeholder
     drugSelect.innerHTML = '<option value="">-- Select Medication --</option>';
     
-    // Loop through the database and create an option for each drug
+    // Group drugs by class
+    const groups = {};
     for (const [key, data] of Object.entries(drugDatabase)) {
-        const option = document.createElement('option');
-        option.value = key;
-        option.textContent = data.drug_name;
-        drugSelect.appendChild(option);
+        const drugClass = data.class || "Other";
+        if (!groups[drugClass]) groups[drugClass] = [];
+        groups[drugClass].push({ key, name: data.drug_name });
+    }
+
+    // Create optgroups for each class
+    for (const [className, drugs] of Object.entries(groups)) {
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = className;
+        
+        drugs.forEach(drug => {
+            const option = document.createElement('option');
+            option.value = drug.key;
+            option.textContent = drug.name;
+            optgroup.appendChild(option);
+        });
+        
+        drugSelect.appendChild(optgroup);
     }
 }
 
@@ -128,31 +143,38 @@ calculateBtn.addEventListener('click', () => {
         return;
     }
 
-    // 5. Calculate Doses
-    let calculatedMg = weight * rule.dose_mg_per_kg;
+    // 5. Calculate Doses (mg/kg vs Fixed-dose logic)
+    let calculatedMg;
+    let isFixedDose = false;
 
-    // Apply adult cap if one exists in the rule
+    // Logic to distinguish between weight-based and fixed-dose (antihistamines)
+    if (rule.fixed_dose_mg !== undefined && rule.fixed_dose_mg > 0) {
+        calculatedMg = rule.fixed_dose_mg;
+        isFixedDose = true;
+    } else {
+        calculatedMg = weight * rule.dose_mg_per_kg;
+    }
+
+    // Apply adult cap if applicable
     if (rule.max_dose_mg && calculatedMg > rule.max_dose_mg) {
         calculatedMg = rule.max_dose_mg;
     }
 
-    // Calculate volume and round to 1 decimal place
     const calculatedMl = calculatedMg / formulation.concentration_mg_per_ml;
     const finalMl = Math.round(calculatedMl * 10) / 10;
     const finalMg = Math.round(calculatedMg);
 
-    // 6. Push to UI
+    // 6. Push to UI with innerHTML for formatting
     volumeOutput.textContent = `${finalMl} mL`;
     doseOutput.textContent = `(${finalMg} mg of ${drug.base_active_ingredient})`;
     
-    // Build a clean guideline text string to show the user the exact math used
-    const indicationText = drug.indication || 'Bacterial infections';
-    guidelineOutput.innerHTML = `<strong>Indication:</strong> ${drug.indication}<br>
-                             <strong>Target:</strong> ${rule.dose_mg_per_kg} mg/kg/dose ${rule.frequency}. ` + 
-                             (rule.max_dose_mg ? `(Max: ${rule.max_dose_mg} mg/dose).` : '');
+    const targetText = isFixedDose ? `<strong>Fixed Dose:</strong> ${rule.fixed_dose_mg} mg` : `<strong>Target:</strong> ${rule.dose_mg_per_kg} mg/kg`;
+    
+    guidelineOutput.innerHTML = `<strong>Indication:</strong> ${drug.indication}<br>` + 
+                                `${targetText} ${rule.frequency}. ` +
+                                (rule.max_dose_mg ? `(Max: ${rule.max_dose_mg} mg/dose).` : '');
 
     resultsSection.style.display = 'block';
 });
 
-// Boot up the app
 initApp();
