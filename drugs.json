@@ -1,6 +1,7 @@
 {
   "amoxicillin": {
     "drug_name": "Amoxicillin",
+    "class": "Antibiotic",
     "base_active_ingredient": "amoxicillin",
     "requires_severity": true,
     "formulations": [
@@ -78,6 +79,7 @@
   },
   "amoxicillin_clavulanic_acid": {
     "drug_name": "Amoxicillin with clavulanic acid",
+    "class": "Antibiotic",
     "base_active_ingredient": "amoxicillin",
     "requires_severity": true,
     "formulations": [
@@ -132,6 +134,7 @@
   },
   "azithromycin": {
     "drug_name": "Azithromycin",
+    "class": "Antibiotic",
     "base_active_ingredient": "azithromycin",
     "requires_severity": false,
     "formulations": [
@@ -155,6 +158,7 @@
   },
   "cefalexin": {
     "drug_name": "Cefalexin",
+    "class": "Antibiotic",
     "base_active_ingredient": "cefalexin",
     "requires_severity": false,
     "formulations": [
@@ -193,6 +197,7 @@
   },
   "cefaclor": {
     "drug_name": "Cefaclor",
+    "class": "Antibiotic",
     "base_active_ingredient": "cefaclor",
     "requires_severity": true,
     "formulations": [
@@ -247,6 +252,7 @@
   },
   "clarithromycin": {
     "drug_name": "Clarithromycin",
+    "class": "Antibiotic",
     "base_active_ingredient": "clarithromycin",
     "requires_severity": false,
     "formulations": [
@@ -270,6 +276,7 @@
   },
   "erythromycin": {
     "drug_name": "Erythromycin",
+    "class": "Antibiotic",
     "base_active_ingredient": "erythromycin",
     "requires_severity": false,
     "formulations": [
@@ -340,6 +347,7 @@
   },
   "flucloxacillin": {
     "drug_name": "Flucloxacillin",
+    "class": "Antibiotic",
     "base_active_ingredient": "flucloxacillin",
     "requires_severity": true,
     "formulations": [
@@ -426,6 +434,7 @@
   },
   "metronidazole": {
     "drug_name": "Metronidazole",
+    "class": "Antibiotic",
     "base_active_ingredient": "metronidazole",
     "requires_severity": false,
     "formulations": [
@@ -457,6 +466,7 @@
   },
   "phenoxymethylpenicillin": {
     "drug_name": "Phenoxymethylpenicillin",
+    "class": "Antibiotic",
     "base_active_ingredient": "phenoxymethylpenicillin",
     "requires_severity": false,
     "formulations": [
@@ -510,6 +520,7 @@
   },
   "trimethoprim_sulfamethoxazole": {
     "drug_name": "Trimethoprim with sulfamethoxazole",
+    "class": "Antibiotic",
     "base_active_ingredient": "trimethoprim",
     "requires_severity": true,
     "formulations": [
