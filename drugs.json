@@ -550,6 +550,99 @@
     ],
     "indication": "Bacterial infections"
   },
+  "paracetamol": {
+    "drug_name": "Paracetamol",
+    "class": "Analgesic",
+    "base_active_ingredient": "paracetamol",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "paracetamol_100",
+        "name": "Paracetamol oral liquid 100 mg/mL",
+        "concentration_mg_per_ml": 100,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 4-6 hours (max 4 doses in 24 hours)",
+            "max_dose_mg": 1000
+          }
+        ]
+      },
+      {
+        "id": "paracetamol_24",
+        "name": "Paracetamol oral suspension 24 mg/mL",
+        "concentration_mg_per_ml": 24,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 4-6 hours (max 4 doses in 24 hours)",
+            "max_dose_mg": 1000
+          }
+        ]
+      },
+      {
+        "id": "paracetamol_48",
+        "name": "Paracetamol oral suspension 48 mg/mL",
+        "concentration_mg_per_ml": 48,
+        "dosing_rules": [
+          {
+            "min_age_months": 1,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 15,
+            "frequency": "every 4-6 hours (max 4 doses in 24 hours)",
+            "max_dose_mg": 1000
+          }
+        ]
+      }
+    ],
+    "indication": "Pain / fever"
+  },
+  "ibuprofen": {
+    "drug_name": "Ibuprofen",
+    "class": "Analgesic",
+    "base_active_ingredient": "ibuprofen",
+    "requires_severity": false,
+    "formulations": [
+      {
+        "id": "ibuprofen_20",
+        "name": "Ibuprofen oral suspension 20 mg/mL",
+        "concentration_mg_per_ml": 20,
+        "dosing_rules": [
+          {
+            "min_age_months": 3,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 6-8 hours (max 3 doses in 24 hours)",
+            "max_dose_mg": 400
+          }
+        ]
+      },
+      {
+        "id": "ibuprofen_40",
+        "name": "Ibuprofen oral suspension 40 mg/mL",
+        "concentration_mg_per_ml": 40,
+        "dosing_rules": [
+          {
+            "min_age_months": 3,
+            "max_age_months": 144,
+            "severity": "standard",
+            "dose_mg_per_kg": 10,
+            "frequency": "every 6-8 hours (max 3 doses in 24 hours)",
+            "max_dose_mg": 400
+          }
+        ]
+      }
+    ],
+    "indication": "Pain / fever"
+  },
   "desloratadine": {
     "drug_name": "Desloratadine",
     "class": "Antihistamine",
@@ -636,4 +729,3 @@
     ]
   }
 }
-
