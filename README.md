@@ -38,7 +38,7 @@ The application separates the clinical data from the core logic engine. New medi
 This tool calculates standard reference doses only. A patient's clinical condition (e.g., renal/liver disease, immunosuppression, overweight, malnutrition) may require alteration of doses. If in doubt, seek senior or specialist medical advice. This tool is for educational/reference purposes and does not replace independent clinical judgment.
 
 Clinical Reference:
-```bash
+```text
 Australian Medicines Handbook Pty Ltd. AMH Children's Dosing Companion [Internet]. Adelaide: Australian Medicines Handbook Pty Ltd; 2024 [cited 2026 Mar 3]. Available from: https://childrens.amh.net.au/
 ```
 ## 👩‍💻 About the Developer
