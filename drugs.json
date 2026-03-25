@@ -660,7 +660,7 @@
             "severity": "standard",
             "dose_mg_per_kg": 1,
             "frequency": "once daily",
-            "max_dose_mg": null
+            "max_dose_mg": 60
           }
         ]
       }
