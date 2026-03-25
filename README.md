@@ -29,6 +29,7 @@ The application separates the clinical data from the core logic engine. New medi
 // Example Data Structure
 "amoxicillin": {
   "base_active_ingredient": "amoxicillin",
+  "class": "Antibiotic",
   "requires_severity": true,
   "formulations": [ ... ]
 }
