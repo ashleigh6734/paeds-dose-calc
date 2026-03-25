@@ -6,7 +6,7 @@ A lightweight, purely client-side web application designed to safely and rapidly
 
 ## ✨ Features
 * **Clinical Guardrails:** Automatically caps pediatric weight-based calculations at the maximum recommended adult single dose.
-* **Dynamic Logic:** Adjusts calculations and available formulations based on the patient's age (months/years) and the severity of the infection.
+* **Dynamic Logic:** Adjusts calculations and available formulations based on the patient's age and the severity of the infection.
 * **Comprehensive Australian Database:** Includes a significantly wider range of oral liquid antibiotics compared to standard calculators, with calculations specifically tailored to formulations available on the Australian PBS.
 * **Zero-Latency:** 100% client-side execution means the calculator works instantly.
 * **Mobile-Responsive:** CSS designed specifically to be readable and easily tappable on phones and tablets.
