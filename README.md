@@ -1,4 +1,5 @@
 # Paediatric Dose Calculator 💊
+[![CI](https://github.com/ashleigh6734/paeds-dose-calc/actions/workflows/ci.yml/badge.svg)](https://github.com/ashleigh6734/paeds-dose-calc/actions/workflows/ci.yml)
 
 A lightweight, purely client-side web application designed to safely and rapidly calculate pediatric antibiotic liquid doses. This tool reduces cognitive load by calculating both the raw milligram (mg) target and the final administrable volume (mL) based on standard Australian guidelines.
 

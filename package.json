@@ -1,0 +1,13 @@
+{
+  "name": "paeds-dose-calc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Paediatric dose calculator",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  }
+}
